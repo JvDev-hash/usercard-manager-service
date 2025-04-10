@@ -23,7 +23,8 @@ public class Configurations {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOriginPatterns(Arrays.asList("http://localhost:4200/", "http://127.0.0.1:4200/")); // Use allowedOriginPatterns instead of allowedOrigins
+        configuration.setAllowedOriginPatterns(Arrays.asList("http://localhost:4200/", "http://127.0.0.1:4200/",
+                                            "http://usercardFrontend:4200/", "https://usercard.azbisdev.app.br/")); // Use allowedOriginPatterns instead of allowedOrigins
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("Origin", "Accept", "X-Requested-With", "Content-Type",
                 "Access-Control-Request-Method", "Access-Control-Request-Headers", "Authorization"));
